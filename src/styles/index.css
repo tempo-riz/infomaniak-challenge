@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card-img-top-bg {
+  height: 200px;
+  display: flex;
+  background: url('../assets/images/bg-gradient.svg') center/cover no-repeat;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover{
+  box-shadow: 0 10px 20px rgba(38, 25, 180, 0.2);
+}
+
+.card-content {
+  animation: revealContent 1s ease-in-out;
+}
+
+@keyframes revealContent {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
